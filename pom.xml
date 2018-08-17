@@ -6,7 +6,11 @@
 
     <groupId>com.yue</groupId>
     <artifactId>Qian</artifactId>
+    <packaging>pom</packaging>
     <version>1.0</version>
+    <modules>
+        <module>angular</module>
+    </modules>
 
 
     <properties>

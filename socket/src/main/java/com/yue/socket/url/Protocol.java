@@ -8,9 +8,11 @@ import java.net.URL;
  */
 public class Protocol {
     public static void main(String[] args) {
-        testProtocol("ftp://192.168.50.64");
-        testProtocol("telnet://192.168.50.103:80");
-        testProtocol("file://fsdsdfd");
+//        testProtocol("ftp://192.168.50.64");
+//        testProtocol("telnet://192.168.50.103:80");
+//        testProtocol("file://fsdsdfd");
+        Protocol protocol = new Protocol();
+        protocol.testJar();
     }
 
     private static void testProtocol(String url) {
@@ -22,4 +24,10 @@ public class Protocol {
             System.out.println("不支持" + url.split(":")[0]);
         }
     }
+
+    private  void testJar(){
+        String path = this.getClass().getProtectionDomain().getCodeSource().getLocation().getPath();
+        System.out.println(path);
+    }
+
 }
