@@ -15,7 +15,7 @@ public class ExtThreadPool {
 
 
         public void run() {
-            System.out.println("正在执行" + ":Thread id" + Thread.currentThread().getId() + ", Task name:" + this.name);
+            System.out.println("正在执行" + ":ThreadA id" + Thread.currentThread().getId() + ", Task name:" + this.name);
         }
     }
 

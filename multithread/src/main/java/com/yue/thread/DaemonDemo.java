@@ -17,15 +17,6 @@ public class DaemonDemo {
         }
     }
 
-    /**
-     * thread������Ϊ�ػ��߳�,ϵͳ��ֻ�����߳�mainΪ�û��߳�,�����main�߳�����3���˳�ʱ,��������Ҳ��֮����,��������߳�thread����Ϊ�ػ��߳�,
-     * main�߳̽�����,t�̻߳��᲻ͣ�Ĵ�ӡ,��ԶҲ�������.
-     *
-     * tip:��һ��JavaӦ����,ֻ���ػ��߳�ʱ,Java������ͻ��˳�.
-     *
-     * @param args
-     * @throws InterruptedException
-     */
     public static void main(String args[]) throws InterruptedException {
         Thread thread = new DaemonT();
         thread.setDaemon(true);

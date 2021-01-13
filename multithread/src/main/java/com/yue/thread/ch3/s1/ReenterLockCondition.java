@@ -11,7 +11,7 @@ public class ReenterLockCondition implements Runnable {
         try{
             lock.lock();
             condition.await();
-            System.out.println("Thread is going on");
+            System.out.println("ThreadA is going on");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }finally {

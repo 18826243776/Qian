@@ -8,7 +8,7 @@ public class ThreadPoolDemo {
 
 
         public void run() {
-            System.out.println(System.currentTimeMillis() + " Thread id:" + Thread.currentThread().getId());
+            System.out.println(System.currentTimeMillis() + " ThreadA id:" + Thread.currentThread().getId());
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
